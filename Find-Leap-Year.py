@@ -9,7 +9,7 @@ year_input = int(input("Enter the year you want to find leap year:"))  #first as
 
 def is_leap_year(user_year):    #define a function
     
-    if user_year % 4 == 0 or user_year % 400 == 0: # use the condition to find a leap year
+    if user_year % 4 == 0 and user_year % 400 == 0: # use the condition to find a leap year
         print(f"{user_year} is a leap year")
     else:
         print(f"{user_year} is not a leap year")
